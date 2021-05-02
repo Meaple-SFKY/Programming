@@ -1,0 +1,14 @@
+# 实验报告
+
+类名|属性|方法
+--|---|--
+`public class FirstSet`|`private char[] VN`, `private char[] VT`, `public char[] charactor`, `public String[] title`, `public String[] grammar`, `public String[] extendGrammar`, `private String[] FIRST`, `private int head`, `private int bodyStart`|`public int getLength()`, `public char[] getVn()`, `public char[] getVt()`, `public void print()`, `public int indexOfGrammar(String str)`, `public FirstSet()`, `private void initFirst()`, `public int indexOfVn(char chVn)`, `public int indexOfVt(char chVt)`, `private void addVtToFirOfVn()`, `private boolean ifContainsOfHead(int headVn, int bodyVn)`, `private void addFirOfVnToFirOfVn()`, `private void tidyFirst()`, `public void printFirst()`, `public String getFirOfString(String string)`
+`class Item`|`int indexPoint`, `char nextChar`, `String body`, `String item`, `String firstSet`|`public Item(String itemString, int index)`, `public void freshFirst()`, `private void initItem()`, `private void setNextChar()`, `private void setBody()`, `private void setFirstSet()`, `public void setIndexPoint(int i)`, `public void setNextChar(char ch)`
+`class ItemSet`|`ArrayList<Item> items`|`public void addItem(Item item)`, `public void printSet()`
+`public class ItemFamily`|`ArrayList<ItemSet> itemSets`|`public void addItemSet(ItemSet itemSet)`, `public void printFamily()`, `public boolean isEqualItems(ItemSet firSet, ItemSet secSet)`, `public int getIndexInFamily(ItemSet itemSet)`, `public boolean isInFamily(ItemSet itemSet)`
+`public class SetFamily`|`ItemFamily itemFamily`, `FirstSet firstSet`|`public SetFamily(String[] grammar)`, `private ItemSet closure(ItemSet itemSet)`, `public ItemSet goTo(ItemSet itemSet, char nowChar)`, `public void setItemFamily(String[] grammar)`
+`public class SetTable`|`private SetFamily family`, `private ItemFamily familyItem`, `private char[] vnSet`, `private char[] vtSet`, `private String[][] analysisTable`|`public SetTable()`, `public String[][] getAnalysisTable()`, `public ItemFamily getFamily()`, `public int actionIndex()`, `public int indexOfVt(char ch)`, `public int indexOfVn(char ch)`, `public int gotoIndex()`, `private void initTable()`, `public void formTable()`, `public void printTable()`, `public void printFamily()`
+`public class DemoLr extends JFrame`||`public static void main(String[] args)`
+`class TestField extends JFrame`||`public TestField()`
+`class ProTableFrame extends JFrame`|`private String[] processTitles`, `private String[][] processTable`|`public ProTableFrame(String str)`
+`class ParTableFrame extends JFrame`|`private String[] parserTitles`, `private String[][] parserTable`|`public ParTableFrame(String str)`

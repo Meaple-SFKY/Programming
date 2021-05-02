@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./Chap1",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": false,
+    "python.testing.promptToConfigure": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.envFile": "${workspaceFolder}/.vscode/.env"
+}

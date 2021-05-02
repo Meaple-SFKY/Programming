@@ -1,0 +1,13 @@
+<view class="box" hover-class="boxHover" hover-stop-propagation="{{true}}">
+	<view class="item" hover-class="itemHover" hover-stop-propagation="{{true}}">
+		1111
+	</view>
+</view>
+
+<image class="img1" src="/images/pic2.png" mode="aspectFit"></image>
+<image src="/images/pic2.png" mode="aspectFit"></image>
+<image src="/images/pic3.PNG" mode="aspectFit"></image>
+
+<text selectable="true">
+	xuwenxing
+</text>

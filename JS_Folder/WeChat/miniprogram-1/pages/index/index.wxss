@@ -1,0 +1,27 @@
+.box {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
+.boxHover {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+.item {
+  width: 30px;
+  height: 20px;
+  background: gold;
+}
+
+.itemHover {
+  width: 30px;
+  height: 20px;
+  background: grey;
+}
+
+image {
+  width: 100%;
+}

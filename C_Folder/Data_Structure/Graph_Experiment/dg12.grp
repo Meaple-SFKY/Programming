@@ -1,0 +1,22 @@
+                     Graph
+DG
+
+//下面为顶点列表，对应的编号为1，2，3，4,...
+a b c d e f g h i j
+
+//以下为邻接点（边）信息
+a b
+a c
+a d
+b e
+c e
+c f
+d f
+d i
+e g
+e h
+f h
+f i
+g j
+h j
+i j

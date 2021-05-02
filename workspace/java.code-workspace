@@ -1,0 +1,312 @@
+{
+	"folders": [
+		{
+			"path": "../Java_Folder"
+		}
+	],
+	"settings": {
+		"editor.codeActionsOnSave": null,
+		"editor.fontFamily": "Cascadia Code, Monaco, monospace",
+		"terminal.integrated.fontFamily": "Hack Nerd Font",
+		"terminal.integrated.fontSize": 14,
+		"git.ignoreLimitWarning": true
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+		
+			{
+				"type": "java",
+				"name": "Debug (Launch) - Current File",
+				"request": "launch",
+				"mainClass": "${file}"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Cake<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.hiding.Cake",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ChocolateChip<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.hiding.ChocolateChip",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ChocolateChip2<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.hiding.ChocolateChip2",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Dinner<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.hiding.Dinner",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-IceCream<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.hiding.IceCream",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-LibTest<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.hiding.LibTest",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CreatePackageAccessObject<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.hiding.packageaccess.CreatePackageAccessObject",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-AnImplementation<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.interfaces.AnImplementation",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Applicator<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.interfaces.Applicator",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Instantiable<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.interfaces.Instantiable",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Jim<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.interfaces.Jim",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Machine<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.interfaces.Machine",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MultipleInheritance<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.interfaces.MultipleInheritance",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FieldAccess<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.polymorphism.FieldAccess",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Frog<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.polymorphism.Frog",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-PrivateOverride<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.polymorphism.PrivateOverride",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ReferenceCounting<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.polymorphism.ReferenceCounting",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Sandwich<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.polymorphism.Sandwich",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Shapes<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.polymorphism.Shapes",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-StaticPolymorphism<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.polymorphism.StaticPolymorphism",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Music<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.polymorphism.music.Music",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Beetle<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Beetle",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-BlankFinal<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.BlankFinal",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CADSystem<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.CADSystem",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Car<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Car",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Cartoon<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Cartoon",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Chess<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Chess",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Cleanser<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Cleanser",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DerivedSpaceShip<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.DerivedSpaceShip",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Detergent<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Detergent",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FinalArguments<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.FinalArguments",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FinalData<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.FinalData",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FinalOverridingIllusion<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.FinalOverridingIllusion",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hide<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Hide",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Jurassic<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Jurassic",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Orc<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Orc",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-SpaceShipDelegation<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.SpaceShipDelegation",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-SprinklerSystem<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.SprinklerSystem",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Wind<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.meaple.reuse.Wind",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-LexicalAnalyzer<Java_Folder_24993286>",
+				"request": "launch",
+				"mainClass": "com.principle.lexical.LexicalAnalyzer",
+				"projectName": "Java_Folder_24993286"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Analysis",
+				"request": "launch",
+				"mainClass": "src.practice.robocup.Analysis"
+			}
+		]
+	}
+}

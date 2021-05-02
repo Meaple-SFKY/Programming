@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../Assemble_Folder"
+		}
+	],
+	"settings": {
+		"editor.cursorBlinking": "smooth",
+		"editor.renderControlCharacters": true
+	}
+}

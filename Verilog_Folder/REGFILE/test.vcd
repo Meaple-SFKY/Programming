@@ -1,0 +1,92 @@
+$date
+	Sat Dec 26 22:23:10 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 16 ! outB [15:0] $end
+$var wire 16 " outA [15:0] $end
+$var reg 1 # WE $end
+$var reg 3 $ addrA [2:0] $end
+$var reg 3 % addrB [2:0] $end
+$var reg 1 & clk $end
+$var reg 3 ' inAddr [2:0] $end
+$var reg 16 ( inData [15:0] $end
+$scope module file $end
+$var wire 1 # WE $end
+$var wire 3 ) addrA [2:0] $end
+$var wire 3 * addrB [2:0] $end
+$var wire 1 & clk $end
+$var wire 3 + inAddr [2:0] $end
+$var wire 16 , inData [15:0] $end
+$var wire 16 - outA [15:0] $end
+$var wire 16 . outB [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 .
+b0 -
+b0 ,
+b0 +
+b1 *
+b0 )
+b0 (
+b0 '
+0&
+b1 %
+b0 $
+0#
+b0 "
+b1 !
+$end
+#5
+1&
+#10
+0&
+b11 !
+b11 .
+b11 %
+b11 *
+b10 "
+b10 -
+b10 $
+b10 )
+#15
+1&
+#20
+0&
+1#
+b100 '
+b100 +
+b11111111 (
+b11111111 ,
+#25
+1&
+#30
+0&
+b101 '
+b101 +
+b11101110 (
+b11101110 ,
+#35
+1&
+#40
+0&
+b11101110 !
+b11101110 .
+b101 %
+b101 *
+b11111111 "
+b11111111 -
+b100 $
+b100 )
+0#
+#45
+1&
+#50

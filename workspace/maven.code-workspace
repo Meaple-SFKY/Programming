@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../Maven_Folder"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "disabled"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../Go_Folder"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
