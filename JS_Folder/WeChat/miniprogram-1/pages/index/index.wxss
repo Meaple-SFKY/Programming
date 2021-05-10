@@ -25,3 +25,31 @@
 image {
   width: 100%;
 }
+
+.link {
+  height: 40px;
+}
+
+.scrout {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.scrbox {
+  width: 100px;
+  height: 100px;
+  background: gold;
+  margin-right: 2px;
+  flex: 0 0 100px;
+}
+
+.scroll2 {
+  height: 350px;
+}
+
+.scrbox2 {
+  height: 100px;
+  background: pink;
+  margin-bottom: 2px;
+  flex: 0 0 100px;
+}

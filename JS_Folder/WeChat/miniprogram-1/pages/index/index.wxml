@@ -1,12 +1,46 @@
+<image src="/images/pic2.png" mode="aspectFit"></image>
+
 <view class="box" hover-class="boxHover" hover-stop-propagation="{{true}}">
 	<view class="item" hover-class="itemHover" hover-stop-propagation="{{true}}">
 		1111
 	</view>
 </view>
 
-<image class="img1" src="/images/pic2.png" mode="aspectFit"></image>
-<image src="/images/pic2.png" mode="aspectFit"></image>
-<image src="/images/pic3.PNG" mode="aspectFit"></image>
+<view>
+	<navigator class="link" url="/pages/demo4/demo4" style="width:200rpx; height:200rpx">
+		跳转到demo4
+	</navigator>
+</view>
+
+<button type="primary" bindtap="clickBtn">Switch To Demo4</button>
+
+<scroll-view class="scroll1" scroll-x="true">
+	<view class="scrout">
+		<view class="scrbox">111</view>
+		<view class="scrbox">222</view>
+		<view class="scrbox">333</view>
+		<view class="scrbox">444</view>
+		<view class="scrbox">555</view>
+	</view>
+</scroll-view>
+
+<scroll-view class="scroll2" scroll-y="true">
+	<view class="scrout2">
+		<view class="scrbox2">111</view>
+		<view class="scrbox2">222</view>
+		<view class="scrbox2">333</view>
+		<view class="scrbox2">444</view>
+		<view class="scrbox2">555</view>
+	</view>
+</scroll-view>
+
+<view>
+	<navigator class="link" url="/pages/logs/logs" open-type="switchTab">
+		跳转到日志
+	</navigator>
+</view>
+
+<image class="img1" src="/images/pic4.png" mode="aspectFit" show-menu-by-longpress="true"></image>
 
 <text selectable="true">
 	xuwenxing

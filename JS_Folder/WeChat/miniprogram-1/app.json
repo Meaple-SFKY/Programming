@@ -1,13 +1,41 @@
 {
 	"pages": [
+		"pages/demo6/demo6",
 		"pages/index/index",
-    "pages/logs/logs"
+		"pages/demo/demo",
+    "pages/logs/logs",
+		"pages/demo2/demo2",
+		"pages/demo3/demo3",
+		"pages/demo4/demo4"
 	],
 	"window": {
-		"backgroundTextStyle": "light",
+		"backgroundTextStyle": "dark",
 		"navigationBarBackgroundColor": "#fff",
 		"navigationBarTitleText": "Weixin",
-		"navigationBarTextStyle": "black"
+		"navigationBarTextStyle": "black",
+		"backgroundColor": "#bbbbbb"
+	},
+	"tabBar": {
+    "color": "#999999",
+    "selectedColor": "#515151",
+    "backgroundColor": "#f3f3f3",
+    "borderStyle": "white",
+	  "list": [{
+      "pagePath": "pages/index/index",
+      "text": "index",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index-2.png"
+	  }, {
+      "pagePath": "pages/demo6/demo6",
+      "text": "demo",
+      "iconPath": "images/liaotian.png",
+      "selectedIconPath": "images/liaotian-2.png"
+	  }, {
+      "pagePath": "pages/logs/logs",
+      "text": "logs",
+      "iconPath": "images/rizhi.png",
+      "selectedIconPath": "images/rizhi-2.png"
+	  }]
 	},
 	"style": "v2",
 	"sitemapLocation": "sitemap.json"
