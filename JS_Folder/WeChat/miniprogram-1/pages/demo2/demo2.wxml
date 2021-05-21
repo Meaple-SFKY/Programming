@@ -1,0 +1,18 @@
+<view>课表-{{title}}</view>
+
+<view>
+	{{listArr[1]}}
+</view>
+
+<view>
+	{{obj.name}} - {{obj.age}} - {{obj.sex}}
+</view>
+
+<view wx:if="{{day==1}}">周1</view>
+<view wx:elif="{{day==2}}">周2</view>
+<view wx:elif="{{day==3}}">周3</view>
+<view wx:elif="{{day==4}}">周4</view>
+<view wx:elif="{{day==5}}">周5</view>
+<view wx:elif="{{day==6}}">周6</view>
+<view wx:elif="{{day==7}}">周日</view>
+<view wx:else>错误</view>

@@ -1,0 +1,10 @@
+<view class="header">
+  <view class="container">
+    <navigator class="logo">
+      <image src="/images/logo.png"></image>
+    </navigator>
+    <navigator class="kefu">
+      <image src="/images/xiaoxi.png"></image>
+    </navigator>
+  </view>
+</view>

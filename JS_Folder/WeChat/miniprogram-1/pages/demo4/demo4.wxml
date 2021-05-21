@@ -1,0 +1,10 @@
+<!--pages/demo4/demo4.wxml-->
+<text>pages/demo4/demo4.wxml</text>
+
+<navigator url="/pages/index/index" open-type="switchTab">跳转到index</navigator>
+
+<view bindtap="myTap" data-name="你好" data-title="小程序开发">{{name}}</view>
+
+<view bindtap="locTap">位置</view>
+
+<view bindtap="backPage">Back</view>

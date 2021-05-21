@@ -1,0 +1,79 @@
+// pages/demo3/demo3.js
+Page({
+
+	/**
+	 * Page initial data
+	 */
+	data: {
+		listObj: [
+			{
+				title: "新闻",
+				time: "2021-05-01"
+			},
+			{
+				title: "动态",
+				time: "2021-05-02"
+			},
+			{
+				title: "作品",
+				time: "2021-05-03"
+			}
+		]
+	},
+
+	/**
+	 * Lifecycle function--Called when page load
+	 */
+	onLoad: function (options) {
+
+	},
+
+	/**
+	 * Lifecycle function--Called when page is initially rendered
+	 */
+	onReady: function () {
+
+	},
+
+	/**
+	 * Lifecycle function--Called when page show
+	 */
+	onShow: function () {
+
+	},
+
+	/**
+	 * Lifecycle function--Called when page hide
+	 */
+	onHide: function () {
+
+	},
+
+	/**
+	 * Lifecycle function--Called when page unload
+	 */
+	onUnload: function () {
+
+	},
+
+	/**
+	 * Page event handler function--Called when user drop down
+	 */
+	onPullDownRefresh: function () {
+
+	},
+
+	/**
+	 * Called when page reach bottom
+	 */
+	onReachBottom: function () {
+
+	},
+
+	/**
+	 * Called when user click on the top right corner to share
+	 */
+	onShareAppMessage: function () {
+
+	}
+})

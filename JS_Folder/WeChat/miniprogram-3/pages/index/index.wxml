@@ -1,0 +1,39 @@
+<view>
+  <scroll_view class="major" scroll-x="true" style="width: 100%">
+    
+    <view class="box">
+      <navigator url="">
+        <image class="pic" src="/images/kecheng1.png"></image>
+        <view class="txt">平面设计</view>
+      </navigator>
+    </view>
+
+    <view class="box">
+      <navigator url="">
+        <image class="pic" src="/images/kecheng2.png"></image>
+        <view class="txt">室内设计</view>
+      </navigator>
+    </view>
+
+    <view class="box">
+      <navigator url="">
+        <image class="pic" src="/images/kecheng3.png"></image>
+        <view class="txt">UI设计</view>
+      </navigator>
+    </view>
+
+    <view class="box">
+      <navigator url="">
+        <image class="pic" src="/images/kecheng4.png"></image>
+        <view class="txt">Web前端</view>
+      </navigator>
+    </view>
+
+    <view class="box">
+      <navigator url="">
+        <image class="pic" src="/images/kecheng5.png"></image>
+        <view class="txt">影视后期</view>
+      </navigator>
+      </view>
+  </scroll_view>
+</view>

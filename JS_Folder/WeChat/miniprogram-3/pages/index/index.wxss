@@ -1,0 +1,4 @@
+.major{white-space: nowrap;padding: 50rpx 0;height: 160rpx; box-sizing: border-box;}
+.major .box{text-align: center;width: 165rpx;height: 160rpx;display: inline-block;}
+.major image{width: 100rpx;height: 100rpx;}
+.major .txt{font-size: 26rpx;margin-top: 8rpx; height: 50rpx;}

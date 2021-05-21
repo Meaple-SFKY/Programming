@@ -1,0 +1,13 @@
+<view class="viewBox">
+	<view class="row" wx:for="{{dataList}}" wx:key="index">
+		<view class="pic">
+			<image src="{{item.url}}" mode="aspextFix"></image>
+		</view>
+		<view class="text">
+			<view class="title">{{item.title}}</view>
+			<view class="time">{{item.time}}</view>
+		</view>
+	</view>
+
+	<!-- <button bindtap="nextPage" type="primary">下一页</button> -->
+</view>
