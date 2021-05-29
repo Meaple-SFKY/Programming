@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>碧蛾蜡蝉</folder>
+	<filename>101033.jpg</filename>
+	<path>101033.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>493</width>
+		<height>740</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>碧蛾蜡蝉</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>38</xmin>
+			<ymin>277</ymin>
+			<xmax>327</xmax>
+			<ymax>575</ymax>
+		</bndbox>
+	</object>
+</annotation>

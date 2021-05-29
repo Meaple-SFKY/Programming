@@ -30,7 +30,6 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
-    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -41,7 +40,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.17.0",
-  "appid": "wxa98cade803cb0b6b",
+  "appid": "wx7950209838462088",
   "projectname": "SeCup",
   "debugOptions": {
     "hidedInDevtools": []

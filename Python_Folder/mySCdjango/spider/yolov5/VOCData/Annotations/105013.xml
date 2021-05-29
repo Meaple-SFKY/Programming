@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>分月扇舟蛾</folder>
+	<filename>105013.jpg</filename>
+	<path>105013.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>541</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>分月扇舟蛾</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>119</xmin>
+			<ymin>84</ymin>
+			<xmax>750</xmax>
+			<ymax>541</ymax>
+		</bndbox>
+	</object>
+</annotation>
