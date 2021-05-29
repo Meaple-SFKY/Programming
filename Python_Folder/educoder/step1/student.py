@@ -15,7 +15,7 @@ def PlayMazz(mazz, start, end):
         queue.append(n)
         close.append(n)
         if n == end:
-            print(queue)
+            print("".join(queue))
             return
         visited = mazz[n]
         for i in visited:

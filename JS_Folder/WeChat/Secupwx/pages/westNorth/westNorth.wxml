@@ -1,0 +1,41 @@
+
+  <view class="head">
+    <image class="iconh" src="/pic/chongchong.png" mode="heightFix"></image>
+    <view class="searchArea">
+      <input class="inputContent" placeholder="请输入需要查询" />
+      <text class="btn">搜索</text>
+    </view>
+  </view>
+<view class="contents">
+  
+  <view class="items">
+    <view class="title">新疆杨</view>
+    <image src="/pic/xinjiangyang.jpg" mode="withFix"></image>
+    <view class="disaster">
+      <view class="conTitle">树苗灰斑病</view>
+      <view class="conTxt">  <text space="nbsp">     该病是由杨棒盘孢引起，此病菌随落地病叶及感病枝梢越冬，所以秋季落后到第二年新叶发生前，一定要彻底清除落病叶及感病枝梢。新疆杨、银白杨不感病，加杨较抗病，而小叶杨、小青杨、青杨等易感病，在易感地区应选择抗病品种。
+合理密植、加强管理，实行大垄撒播、条播或插条，密度过大时适当音苗或打去底叶3～5片，密切注意观察，发现病株及时除掉可减少病害发生。药剂防治一般于6月下旬向幼苗喷药，可用65%代森锌500倍液或1：125－170的波尔多液，每半个月喷1次，共喷3～4次。</text></view>
+    </view>
+    
+  </view>
+  <view class="items">
+      <view class="title">榆树</view>
+      <image src="/pic/yushu.jpg" mode="withFix"></image>
+      <view class="disaster">
+        <view class="conTitle">榆毒蛾</view>
+        <view class="conTxt">  <text space="nbsp">   
+          北京、山西1年生2代，以低龄幼虫在树皮缝或附近建筑物的缝隙处越冬。翌年4月中旬榆钱刚开时开始活动，6月中旬就地吐丝作茧化蛹，蛹期15-20天，7月初成虫羽化。7月中、下旬进入1代幼虫孵化盛期，8月下旬化蛹。9月初l代成虫羽化，多把卵产在叶背或枝条上，排列成串。9月中、下旬2代幼虫孵化、为害。10月上旬幼虫钻进树皮缝处越冬。成虫有趋光性。 
+  防治措施：
+        发生严重地区于5月下旬-6月上旬和7月上中旬一、二代幼虫低龄阶段喷洒20%灭幼脲1号胶悬剂1000倍液或50%辛硫磷乳油1000-1500倍液、20%菊·杀乳油2000倍液、2.5%敌杀死乳油2500倍液。常用药剂 灭幼脲1号、辛硫磷、菊·杀、敌杀死。 </text></view>
+      </view>
+      
+  </view>
+ 
+
+</view>
+ 
+    
+  
+  
+  
+  

@@ -1,0 +1,50 @@
+.M-Board{background-color: rgb(192, 216, 185);}
+.iconh{height: 150rpx;}
+
+.searchArea{
+  height: 15%;
+  width: 70%;
+
+  font-size: 12px;
+ 
+}
+.inputContent{
+  float: left;
+  width: 65%;
+  height: 60rpx;
+  background-color: whitesmoke;
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+  padding-top:10rpx;
+  padding-bottom: 10rpx;
+  margin-left: 20rpx;
+  border:1px solid rgb(168, 161, 224)
+}
+.btn{
+  float: right;
+  background-color: whitesmoke;
+  padding: 20rpx;
+  margin-top: 35rpx;
+  margin-right: 20rpx;
+  border:1px solid rgb(168, 161, 224)
+}
+.head{justify-content: space-between;padding:20rpx}
+
+.img{width:100%;}
+.swip{height:350rpx;background-color: rgb(204, 231, 154);}
+
+.row{background-color: rgb(216, 231, 224);}
+.flow{display: flex;flex-wrap: nowrap;margin-top: 1rpx;text-align: center;width: 2000prx;}
+.rowpic{height:120rpx;}
+.box{text-align: center;width:150rpx;padding:30rpx}
+.rowtext{font-size: 22rpx;color: rgb(0, 0, 0);}
+
+.bimg{height: 200rpx;}
+.brow{display: flex;}
+.article{justify-content: space-between;height: 200rpx;display: flex;flex-direction: column;}
+.btitle{font-size: 30rpx;padding: 30rpx;}
+.btime{font-size: 20rpx;padding: 30rpx;color: rgb(201, 198, 198);}
+.maintitle{display:flex;justify-content: space-between;background-color: rgb(192, 218, 206);}
+.mtitle{font-size: 40rpx;color:rgb(21, 56, 22);padding-left: 15rpx;opacity: 10;}
+.more1{font-size: 28rpx;color: rgb(150, 150, 150);padding-top: 10rpx;}
+.blogs{padding-left:20rpx;border:1px solid rgb(255, 255, 255);}

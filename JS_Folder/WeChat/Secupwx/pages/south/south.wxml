@@ -1,0 +1,52 @@
+
+  <view class="head">
+    <image class="iconh" src="/pic/chongchong.png" mode="heightFix"></image>
+    <view class="searchArea">
+      <input class="inputContent" placeholder="请输入需要查询" />
+      <text class="btn">搜索</text>
+    </view>
+  </view>
+<view class="contents">
+  
+  <view class="items">
+    <view class="title">扶桑</view>
+    <image src="/pic/fushang.jpg" mode="withFix"></image>
+    <view class="disaster">
+      <view class="conTitle">红蜘蛛</view>
+      <view class="conTxt">  <text space="nbsp">     主要危害叶片背面。
+
+防治方法：发现之后全株用大水进行全面冲洗，之后再喷施螨类专杀药剂，如螨净、克螨等； </text></view>
+    </view>
+    
+  </view>
+  <view class="items">
+      <view class="title">海桐树</view>
+      <image src="/pic/haitongshu.jpg" mode="withFix"></image>
+      <view class="disaster">
+        <view class="conTitle">吹绵蚧</view>
+        <view class="conTxt">  <text space="nbsp">   吹绵蚧是一种看着像蜘蛛的害虫，它严重影响海桐的健康生长，一年甚至发生多次，是非常顽固，难防治的一种虫害。
+防治方法
+
+和防治褐斑病一样，首先从源头上阻断，买家在购买时注意检查，发现虫害，拒绝购买；卖家照顾好自己的苗苗，发现虫害，及时治疗。种植之后发现虫害，首先要把有虫害的枝叶剪除，带出田地销毁，还可以进行以虫防虫，引进爱吃吹绵蚧的红瓢虫；当然还可进行药物防治。 </text></view>
+      </view>
+      
+  </view>
+  <view class="items">
+    <view class="title">红叶石楠</view>
+    <image src="/pic/hongyeshinan.jpg" mode="withFix"></image>
+    <view class="disaster">
+      <view class="conTitle">红叶石楠介壳虫</view>
+      <view class="conTxt">  <text space="nbsp">    介壳虫主要危害红叶石楠的顶芽，枝条，在介壳虫害严重时甚至会遍布红叶石楠的枝条、树叶，影响红叶石楠的观赏价值。
+
+综合防治方法：① 向树干涂20倍80％的敌敌畏药环杀灭树下幼虫；② 药物防治:傍晚可喷1.2％烟参硷乳油1:1000倍. </text></view>
+    </view>
+    
+  </view>
+
+</view>
+ 
+    
+  
+  
+  
+  

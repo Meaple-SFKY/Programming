@@ -1,0 +1,21 @@
+.camera{
+  width: 1000rpx;
+  height: 1000rpx;
+}
+.record{
+  position: fixed;
+  bottom: 10rpx;
+  left: 0;
+  right: 0;
+  width: 120rpx;
+  height: 120rpx;
+  margin: auto;
+  border-radius: 50%;
+}
+.content{ 
+
+  display: flex; 
+
+  flex-direction: row; 
+
+}

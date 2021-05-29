@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>桃红颈天牛</folder>
+	<filename>115050.jpg</filename>
+	<path>115050.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>850</width>
+		<height>532</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>桃红颈天牛</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>388</xmin>
+			<ymin>63</ymin>
+			<xmax>705</xmax>
+			<ymax>419</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,10 @@
+<view><camera
+  class="camera"
+  frame-size="medium"
+></camera></view>
+  <!-- frame-size="large"拍照图片高清 -->
+<view class="content">
+  <button bindtap='record'>拍摄</button>
+  <button bindtap='choose'>上传</button>
+</view>
+

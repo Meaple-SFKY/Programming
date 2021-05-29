@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>柑橘凤蝶</folder>
+	<filename>106018.jpg</filename>
+	<path>106018.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>850</width>
+		<height>638</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>柑橘凤蝶</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>217</xmin>
+			<ymin>34</ymin>
+			<xmax>620</xmax>
+			<ymax>556</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>红尾大蚕蛾</folder>
+	<filename>109040.jpg</filename>
+	<path>109040.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>968</width>
+		<height>1296</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>红尾大蚕蛾</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>227</xmin>
+			<ymin>89</ymin>
+			<xmax>929</xmax>
+			<ymax>1129</ymax>
+		</bndbox>
+	</object>
+</annotation>
