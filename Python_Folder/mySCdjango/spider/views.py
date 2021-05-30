@@ -8,16 +8,12 @@ from pathlib import Path
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from spider.yolov5 import detect
-
 def index(request):
     s = request.POST
     # prefix = s['img'][:(s['img'].find('base64,') + 6)]
     baseUrl = s['img'][(s['img'].find('base64,') + 7):]
     
     imgGer(baseUrl)
-
-    detectDemo()
     print(sys.path)
     print("******************************")
     data = {
