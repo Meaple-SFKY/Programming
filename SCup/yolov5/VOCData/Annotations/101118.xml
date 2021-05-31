@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>碧蛾蜡蝉</folder>
+	<filename>101118.jpg</filename>
+	<path>101118.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3000</width>
+		<height>1854</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>碧蛾蜡蝉</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1369</xmin>
+			<ymin>142</ymin>
+			<xmax>2491</xmax>
+			<ymax>1171</ymax>
+		</bndbox>
+	</object>
+</annotation>
