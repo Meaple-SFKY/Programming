@@ -1,7 +1,6 @@
 import argparse
 import time
 from pathlib import Path
-import sys
 # sys.path.insert(0, './models')
 
 import cv2

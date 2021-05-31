@@ -1,18 +1,19 @@
 import json
-import os
+# import os
 import sys
 import base64
 
-from pathlib import Path
+# from pathlib import Path
 
-from django.shortcuts import render
+# from django.shortcuts import render
 from django.http import HttpResponse
+
 
 def index(request):
     s = request.POST
     # prefix = s['img'][:(s['img'].find('base64,') + 6)]
     baseUrl = s['img'][(s['img'].find('base64,') + 7):]
-    
+
     imgGer(baseUrl)
     print(sys.path)
     print("******************************")
@@ -22,7 +23,8 @@ def index(request):
         "data": '微信发送成功',
         "total": 1
     }
-    return HttpResponse(json.dumps(data,ensure_ascii=False), content_type="application/json", charset='utf-8',status='200',reason='success')
+    return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json", charset='utf-8', status='200', reason='success')
+
 
 def imgGer(baseUrl):
     imgdata = base64.b64decode(baseUrl)

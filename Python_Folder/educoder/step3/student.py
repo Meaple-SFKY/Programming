@@ -9,24 +9,25 @@ class Solution:
         """求解N皇后问题（调用self.DFS函数）
         :rtype: self.ans: int    #返回N皇后放置方案数
         """
-        #请在这里补充代码，完成本关任务
-        #********** Begin **********#
-        self.vis=[]
+        # 请在这里补充代码，完成本关任务
+        # ********** Begin **********#
+        self.vis = []
         if self.n == 1:
             self.ans = 1
             return self.ans
         self.vis = [0] * self.n
         Solution.DFS(self, 0, self.n)
         return self.ans
-        #********** End **********#
+        # ********** End **********#
+
     def DFS(self, row, n):
         """深度优先搜索N皇后问题的解空间
         :type: row: int      #NxN棋盘的第row行
         :type: n: int        #皇后数量n
         :rtype: None         #无返回值
         """
-        #请在这里补充代码，完成本关任务
-        #********** Begin **********#
+        # 请在这里补充代码，完成本关任务
+        # ********** Begin **********#
         border = len(self.vis)
         if (row >= border):
             self.ans += 1
@@ -42,4 +43,4 @@ class Solution:
                     self.vis[row] = col
                     Solution.DFS(self, row + 1, n)
             col += 1
-        #********** End **********#
+        # ********** End **********#

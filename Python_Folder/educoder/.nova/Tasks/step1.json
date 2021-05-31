@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\ncd step1\npython3 main.py"
+    }
+  },
+  "identifier" : "7A0255B1-473C-48B8-BD4C-C51372BCCAD9",
+  "openLogOnRun" : "start"
+}
