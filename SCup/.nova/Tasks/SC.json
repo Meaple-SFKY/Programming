@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\ncd mySCdjango\npython3 manage.py runserver"
+    }
+  },
+  "identifier" : "517370BF-AFFD-437A-BADA-C5C9CF3DD380",
+  "openLogOnRun" : "start"
+}

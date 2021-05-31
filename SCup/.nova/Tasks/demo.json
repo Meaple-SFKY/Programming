@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "cd test\npython3 demo.py"
+    }
+  },
+  "identifier" : "A78C2E84-8FC2-40E3-AFB3-117BEDE2F677",
+  "openLogOnRun" : "start"
+}

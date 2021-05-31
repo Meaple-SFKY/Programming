@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "python3 manage.py makemigrations"
+    }
+  },
+  "identifier" : "AF3A3FB3-8992-471E-8476-29348C676CC4",
+  "openLogOnRun" : "start"
+}

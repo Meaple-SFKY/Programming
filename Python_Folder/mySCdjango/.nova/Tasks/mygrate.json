@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "python3 manage.py migrate"
+    }
+  },
+  "identifier" : "13BEF4A7-AD3C-47AD-B624-9E60371EDC30",
+  "openLogOnRun" : "start"
+}
