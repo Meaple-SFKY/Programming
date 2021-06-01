@@ -21,7 +21,7 @@ Page({
             
             //打印出base64字符串，可复制到网页校验一下是否是你选择的原图片呢
             that.setData({temp:base64})
-          var apiUrl= 'http://localhost:8000/spider/1/'
+          var apiUrl= 'http://localhost:8000/myspider/1/'
           var t = base64
           wx.request({
             url: apiUrl,
