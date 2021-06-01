@@ -2,6 +2,7 @@ import json
 import base64
 from django.http import HttpResponse
 from .models import Image
+import os
 
 
 def index(request):
@@ -9,6 +10,7 @@ def index(request):
     # prefix = s['img'][:(s['img'].find('base64,') + 6)]
     baseUrl = s['img'][(s['img'].find('base64,') + 7):]
     imgPost(baseUrl)
+    os.system("sh ./my.sh")
 
     print("******************************")
     data = {

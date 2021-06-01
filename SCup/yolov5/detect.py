@@ -17,7 +17,7 @@ from utils.torch_utils import select_device, load_classifier, time_synchronized
 def getImg():
     conn = mdb.connect(host='localhost', user='root', passwd='ppqq8888', db='pic')
     cursor = conn.cursor()
-    cursor.execute("SELECT name, image FROM spider_image LIMIT 1")
+    cursor.execute("SELECT name, image FROM myspider_image LIMIT 1")
     [name, image] = cursor.fetchone()
     path = "data/images/" + str(name)
     file = open(path, 'wb')
