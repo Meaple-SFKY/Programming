@@ -1,21 +1,15 @@
 import json
-# import os
-import sys
 import base64
-
-# from pathlib import Path
-
-# from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Image
 
 
 def index(request):
     s = request.POST
     # prefix = s['img'][:(s['img'].find('base64,') + 6)]
     baseUrl = s['img'][(s['img'].find('base64,') + 7):]
+    imgPost(baseUrl)
 
-    imgGer(baseUrl)
-    print(sys.path)
     print("******************************")
     data = {
         "code": '200',
@@ -26,8 +20,10 @@ def index(request):
     return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json", charset='utf-8', status='200', reason='success')
 
 
-def imgGer(baseUrl):
+def imgPost(baseUrl):
     imgdata = base64.b64decode(baseUrl)
-    file = open('1.jpg', 'wb')
-    file.write(imgdata)
-    file.close()
+    new_img = Image(
+        name=str("1.jpg"),
+        image=imgdata
+    )
+    new_img.save()

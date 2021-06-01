@@ -8,12 +8,7 @@ def index(request):
     s = request.POST
     # prefix = s['img'][:(s['img'].find('base64,') + 6)]
     baseUrl = s['img'][(s['img'].find('base64,') + 7):]
-    imgGer(baseUrl)
-
-    new_img = Image(
-        image = request.POST['img']
-    )
-    new_img.save()
+    imgPost(baseUrl)
 
     print("******************************")
     data = {
@@ -25,8 +20,10 @@ def index(request):
     return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json", charset='utf-8', status='200', reason='success')
 
 
-def imgGer(baseUrl):
+def imgPost(baseUrl):
     imgdata = base64.b64decode(baseUrl)
-    file = open('img/1.jpg', 'wb')
-    file.write(imgdata)
-    file.close()
+    new_img = Image(
+        name=str("1.jpg"),
+        image=imgdata
+    )
+    new_img.save()
