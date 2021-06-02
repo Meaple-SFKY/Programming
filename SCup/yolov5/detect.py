@@ -176,6 +176,8 @@ def detect(opt):
         print(f"Results saved to {save_dir}{s}")
 
     print(f'Done. ({time.time() - t0:.3f}s)')
+    if len(insect) == 0:
+        insect = "未识别出"
     return insect
 
 
