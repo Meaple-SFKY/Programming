@@ -72,8 +72,8 @@ Page({
         });
         //res.tempImagePath照片文件在手机内的的临时路径
         let tempImagePath = res.tempImagePath
-        let index = tempFilePath.lastIndexOf(".")
-        var fixName = tempFilePath.substring(index, tempFilePath.length)
+        let index = tempImagePath.lastIndexOf(".")
+        var fixName = tempImagePath.substring(index, tempImagePath.length)
         that.urlTobase64(tempImagePath, fixName)
       }
     })
