@@ -1,5 +1,13 @@
 {
   "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "cd mySCdjango\npython3 manage.py makemigrations\npython3 manage.py migrate"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "rm Caches\/*\nrm -r mySCdjango\/myspider\/migrations\/__pycache__\nrm mySCdjango\/myspider\/migrations\/*\ntouch mySCdjango\/myspider\/migrations\/__init__.py\nrm yolov5\/data\/images\/*\nrm -r yolov5\/runs\/detect\/*"
+    },
     "run" : {
       "enabled" : true,
       "script" : "cd mySCdjango\npython3 manage.py runserver"
