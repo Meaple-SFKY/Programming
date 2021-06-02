@@ -1,5 +1,6 @@
 import argparse
 import time
+import sys
 import pymysql as mdb
 from pathlib import Path
 import cv2
@@ -14,21 +15,35 @@ from utils.plots import colors, plot_one_box, plot_one_box_PIL
 from utils.torch_utils import select_device, load_classifier, time_synchronized
 
 
-def getImg():
-    conn = mdb.connect(host='localhost', user='root', passwd='ppqq8888', db='pic')
+def getName():
+    fp = open("../Caches/name_cache", "r", encoding='utf8')
+    name = fp.read()
+    fp.close()
+    return name
+
+
+def wrResu(result):
+    fp = open("../Caches/detect_cache", "w", encoding='utf8')
+    fp.write(result)
+    fp.close()
+
+
+def getImg(imgName):
+    conn = mdb.connect(host='localhost', user='SFKY', passwd='123456', db='pic')
     cursor = conn.cursor()
-    cursor.execute("SELECT name, image FROM myspider_image LIMIT 1")
-    [name, image] = cursor.fetchone()
-    path = "data/images/" + str(name)
+    cursor.execute("SELECT name, image FROM myspider_image WHERE myspider_image.name = '" + imgName + "' LIMIT 1;")
+    [reName, image] = cursor.fetchone()
+    path = "data/images/detect_" + str(reName)
     file = open(path, 'wb')
     file.write(image)
     file.close()
     cursor.close()
     conn.close()
-    print("Done==============")
+    # print("img get")
 
 
 def detect(opt):
+    insect = ""
     source, weights, view_img, save_txt, imgsz = opt.source, opt.weights, opt.view_img, opt.save_txt, opt.img_size
     save_img = not opt.nosave and not source.endswith('.txt')  # save inference images
     webcam = source.isnumeric() or source.endswith('.txt') or source.lower().startswith(
@@ -111,6 +126,7 @@ def detect(opt):
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
+                    insect = f"{names[int(c)]}{'s' * (n > 1)}";
 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
@@ -160,12 +176,14 @@ def detect(opt):
         print(f"Results saved to {save_dir}{s}")
 
     print(f'Done. ({time.time() - t0:.3f}s)')
+    return insect
 
 
-def detectDemo():
+def detectDemo(name):
+    insect = ""
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default='yolov5_models/best.pt', help='model.pt path(s)')
-    parser.add_argument('--source', type=str, default='data/images', help='source')  # file/folder, 0 for webcam
+    parser.add_argument('--source', type=str, default='data/images/detect_' + name, help='source')  # file/folder, 0 for webcam
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
     parser.add_argument('--conf-thres', type=float, default=0.25, help='object confidence threshold')
     parser.add_argument('--iou-thres', type=float, default=0.45, help='IOU threshold for NMS')
@@ -187,18 +205,20 @@ def detectDemo():
     parser.add_argument('--hide-labels', default=False, action='store_true', help='hide labels')
     parser.add_argument('--hide-conf', default=False, action='store_true', help='hide confidences')
     opt = parser.parse_args()
-    print(opt)
+    # print(opt)
     check_requirements(exclude=('tensorboard', 'pycocotools', 'thop'))
 
     with torch.no_grad():
         if opt.update:  # update all models (to fix SourceChangeWarning)
             for opt.weights in ['yolov5s.pt', 'yolov5m.pt', 'yolov5l.pt', 'yolov5x.pt']:
-                detect(opt=opt)
+                insect = detect(opt=opt)
                 strip_optimizer(opt.weights)
         else:
-            detect(opt=opt)
+            insect = detect(opt=opt)
+    return insect
 
 
 if __name__ == '__main__':
-    getImg()
-    detectDemo()
+    name = getName()
+    getImg(name)
+    wrResu(detectDemo(name))

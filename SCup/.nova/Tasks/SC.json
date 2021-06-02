@@ -1,12 +1,8 @@
 {
   "actions" : {
-    "build" : {
-      "enabled" : true,
-      "script" : "cd mySCdjango\npython3 manage.py runserver"
-    },
     "run" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\ncd yolov5\npython3 detect.py"
+      "script" : "cd mySCdjango\npython3 manage.py runserver"
     }
   },
   "identifier" : "517370BF-AFFD-437A-BADA-C5C9CF3DD380",

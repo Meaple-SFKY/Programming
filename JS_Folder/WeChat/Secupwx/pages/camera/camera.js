@@ -1,4 +1,6 @@
 // pages/camera/camera.js
+var util = require('../../utils/util.js');
+
 Page({
 
   /**
@@ -7,39 +9,39 @@ Page({
   data: {
     datalist:{}
   },
-  urlTobase64:function(url){
+  urlTobase64:function(url, fix){
     let that = this
     wx.request({
       url:url,
       responseType: 'arraybuffer', //最关键的参数，设置返回的数据格式为arraybuffer
       success:res=>{
         //把arraybuffer转成base64
-            let base64 = wx.arrayBufferToBase64(res.data); 
-            
-            //不加上这串字符，在页面无法显示的哦
-            base64　= 'data:image/jpeg;base64,' + base64　
-            
-            //打印出base64字符串，可复制到网页校验一下是否是你选择的原图片呢
-            that.setData({temp:base64})
-          var apiUrl= 'http://localhost:8000/myspider/1/'
-          var t = base64
-          wx.request({
-            url: apiUrl,
-            data:{
-              'img':t
-            },
-            method:'POST',
-    
-            header: {
-              'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-            },
-    
-            success(res) {
-              that.setData({datalist:res.data})
-              console.log(res.data)
-            }
-          })
+        let base64 = wx.arrayBufferToBase64(res.data);
+        
+        //不加上这串字符，在页面无法显示的哦
+        base64　= 'data:image/jpeg;base64,' + base64
+        var nowTime = that.data.time + fix
+        //打印出base64字符串，可复制到网页校验一下是否是你选择的原图片呢
+        that.setData({temp:base64})
+        var apiUrl= 'http://localhost:8000/myspider/1/'
+        var t = base64
+        wx.request({
+          url: apiUrl,
+          data:{
+            'img':t,
+            'nameTime': nowTime
+          },
+          method:'POST',
+          header: {
+            'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+          },
+  
+          success(res) {
+            that.setData({datalist:res.data})
+            console.log(res.data)
           }
+        })
+      }
     })
   },
   choose(){
@@ -47,8 +49,14 @@ Page({
     
     wx.chooseImage({
       success: function(res) {
-        var tempFilePath = res.tempFilePaths[0] 
-        that.urlTobase64(tempFilePath)
+        let currentTime = util.formatTime(new Date()).replace(/\//g, '_').replace(/:/g, '_').replace(/\ /g, '_');
+        that.setData({
+          time: currentTime
+        });
+        var tempFilePath = res.tempFilePaths[0]
+        let index = tempFilePath.lastIndexOf(".")
+        var fixName = tempFilePath.substring(index, tempFilePath.length)
+        that.urlTobase64(tempFilePath, fixName)
       }
     })
   },
@@ -58,24 +66,33 @@ Page({
     this.data.cameraContext.takePhoto({
       quality:"high", //高质量的图片
       success: res => {
+        let currentTime = util.formatTime(new Date()).replace(/\//g, '_').replace(/:/g, '_').replace(/\ /g, '_');
+        that.setData({
+          time: currentTime
+        });
         //res.tempImagePath照片文件在手机内的的临时路径
         let tempImagePath = res.tempImagePath
-        that.urlTobase64(tempImagePath)
+        let index = tempFilePath.lastIndexOf(".")
+        var fixName = tempFilePath.substring(index, tempFilePath.length)
+        that.urlTobase64(tempImagePath, fixName)
       }
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    var time = util.formatTime(new Date()).replace(/\//g, '_').replace(/:/g, '_').replace(/\ /g, '_');
+    this.setData({
+      time: time
+    });
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
@@ -120,3 +137,4 @@ Page({
 
   }
 })
+
