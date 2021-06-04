@@ -126,7 +126,7 @@ def detect(opt):
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
-                    insect = f"{names[int(c)]}{'s' * (n > 1)}";
+                    insect += f" {names[int(c)]}{'s' * (n > 1)}";
 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):

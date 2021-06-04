@@ -1,0 +1,51 @@
+
+  <view class="head">
+    <image class="iconh" src="/pic/chongchong.png" mode="heightFix"></image>
+    <view class="searchArea">
+      <input class="inputContent" placeholder="请输入需要查询" />
+      <text class="btn">搜索</text>
+    </view>
+  </view>
+<view class="contents">
+  
+  
+  <view class="items">
+      <!-- <view class="title">云杉</view> -->
+      
+      <view class="disaster">
+        <view class="conTitle">常见林种分类</view>
+        <!-- <image src="/pic/yunsan.jpg" mode="withFix"></image> -->
+        <view class="conTxt">  
+          <text space="nbsp">   阔叶林，由阔叶树种组成的森林称阔叶林，有冬季落叶的落叶阔叶林（又称夏绿林）和四季常绿的常绿阔叶林（又称照叶林）两种类型。阔叶林的组成树种繁多，中国的经济林树种大部分是阔叶树种，它除生产木材外，还可生产木本粮油、干鲜果品、橡胶、紫胶、栲胶、生漆、五倍子、白蜡、软木、药材等产品；壳斗科许多树种的叶片还可喂饲柞蚕；另外，蜜源阔叶树也很丰富，可以开发利用。　　　
+分类
+          </text>
+          <image src="/pic/brow1_1.jpg" mode="withFix"></image>
+          <text space="nbsp">             落叶阔叶林
+落叶阔叶林是中国温带地区最主要的森林类型，构成群落的乔木树种多是冬季落叶的喜光阔叶树，同时，林下还分布有很多的灌木和草本等植物。我国温带地区多为季风气候，四季明显，光照充分，降水不足，适应于这些环境特点，多数树种在干旱寒冷的冬季，以休眠芽的形式过冬，叶和花等脱落，待春季转暖，降水增加的时候纷纷展叶，开始旺盛的生长发育过程。组成我国落叶阔叶林的主要树种有：栎属（Quercus）、水青冈属（Fagus）、杨属（Poplus）、桦属（Betula）、榆属（Ulmus）、桤属（Alnus）、朴属（Celtis）和槭属（Acer）等。很多温带落叶阔叶林分布在我国工农业生产较发达的地区，也是跟我们人类关系十分密切的森林类型，很多行道树和大江大河的水源涵养等都是以这种森林类型为主。
+          </text>
+          <image src="/pic/brow1_2.jpg" mode="withFix"></image>
+          <text space="nbsp">   阔叶混交林
+常绿落叶阔叶混交林是落叶阔叶林和常绿阔叶林的过渡森林类型，在中国亚热带地区有着广泛的分布。该森林群落内物种丰富，结构复杂，所以优势树种不明显。亚热带地区也有明显的季相变化，主要是在秋冬气候变干、变冷，相对比较高大的并处于林冠上层的落叶树种此时叶片脱落。第二或者第三亚层的常绿树种比较耐寒，有时林分内的常绿树种的成分增多，树木较高，形成较典型的常绿与落叶树种的混交林。组成常绿、落叶阔叶林的主要树种有：苦槠（Castanopsis）、青冈（Cyclobalanopsis glauca）、冬青（Ilex chinesis）、石楠（Photinia serrulata）等。该森林群落保存有很多重要的珍贵稀有树种，很多是第三纪孓遗物种，被国家列为重点保护对象，如珙桐（Davidia involucrata）、连香树（Cercidiiiphyllum japonicum var. sinense）、水青树（Tetracen tron sinense）、钟萼木（Bretschneidera sinensis）和杜仲（Eucommia ulmoides）等。
+
+          </text>
+          <image src="/pic/brow1_3.jpg" mode="withFix"></image>
+          <text space="nbsp">   常绿阔叶林
+该植被型分布区气候温暖，四季分明，夏季高温潮湿，冬季降水较少。是中国亚热带地区最具代表性的森林类型，林木个体高大，森林外貌四季常绿，林冠整齐一致。壳豆科、樟科、山茶科、木兰科等是最基本的组成成分，也是亚热带常绿阔叶林的优势种和特征种。在森林群落组成上，更趋于向南分布的水热条件约好，树种组成越是以栲属和石栎属为主，在偏湿的生境条件下，樟科中厚壳桂属的种类更为丰富。常绿阔叶林树木叶片多革质、表面有光泽，叶片排列方向垂直于阳光，故有照叶林之称。
+
+          </text>
+          <image src="/pic/brow1_4.jpg" mode="withFix"></image>
+          
+        </view>
+      </view>
+      
+  </view>
+  
+ 
+
+</view>
+ 
+    
+  
+  
+  
+  

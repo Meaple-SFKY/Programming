@@ -1,0 +1,40 @@
+.iconh{height: 150rpx;}
+
+.searchArea{
+  height: 15%;
+  width: 70%;
+
+  font-size: 12px;
+ 
+}
+.inputContent{
+  float: left;
+  width: 65%;
+  height: 60rpx;
+  background-color: whitesmoke;
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+  padding-top:10rpx;
+  padding-bottom: 10rpx;
+  margin-left: 20rpx;
+  border:1px solid rgb(168, 161, 224)
+}
+.btn{
+  float: right;
+  background-color: whitesmoke;
+  padding: 20rpx;
+  margin-top: 35rpx;
+  margin-right: 20rpx;
+  border:1px solid rgb(168, 161, 224)
+}
+.head{justify-content: space-between;padding:20rpx}
+
+
+.contents{display: flex;flex-direction: column;}
+.items{width: 100%;background: #90ee90;padding: 50rpx 50rpx 0 0 ;display: flex;flex-direction: column;justify-content: center;align-items: center;flex-wrap: nowrap;}
+.title{width: 490rpx; height: 70rpx; background: #de2e05;border-radius: 70rpx;color: #fff; text-align: center;line-height: 70rpx;font-size: 40rpx;margin: 0rpx auto;position: relative;margin-bottom: 30rpx;}
+.title::before{display: block;content: "";width: 100%;height: 100%;border: 2px dotted #de2e05;position: absolute;top: 0;left: 0;box-sizing: border-box;border-radius: 70rpx;transform: scale(1.03,1.2);}
+.items image{width: 750rpx;margin-bottom: 30rpx;}
+.items .disaster{background: #E1E6E0;width: 650rpx;height: 100%;border-radius: 50rpx;  padding: 20rpx 20rpx;}
+.conTitle{font-size: 50rpx;display: flex;justify-content: center;height: 80rpx;}
+.conTxt image{width:650rpx;justify-content: center}

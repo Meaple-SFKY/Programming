@@ -1,0 +1,50 @@
+
+  <view class="head">
+    <image class="iconh" src="/pic/chongchong.png" mode="heightFix"></image>
+    <view class="searchArea">
+      <input class="inputContent" placeholder="请输入需要查询" />
+      <text class="btn">搜索</text>
+    </view>
+  </view>
+<view class="contents">
+  
+  
+  <view class="items">
+      <view class="title">云杉</view>
+      <image src="/pic/yunsan.jpg" mode="withFix"></image>
+      <view class="disaster">
+        <view class="conTitle">云杉八齿小蠹</view>
+        <view class="conTxt">  <text space="nbsp">   在东北1年发生1代，以成虫在落叶松树干基部或枯枝落叶层下越冬，少数在枯死幼树皮下或旧坑道内越冬。生活史不整齐，于第二年5月中下旬出蛰，成虫侵入树干后1-2天即可产卵，卵期长经约14天左右，幼虫期为22天左右，蛹期12天左右。新生的成虫在树皮下停留近1个月，最长可达2个月，然后才钻出羽化孔。双坑道，坑道不算太长，一般为7cm左右，坑道内成虫一般为1雄3雌。有卵室30多个，每个卵室仅有1枚卵。老熟幼虫在子坑道末端筑一个蛹室。在整个生长期内几乎都可以找到各个虫态。该虫喜通风透光，但又不喜阳光直射和极度遮荫的环境，因此在树干上的分布主要在集中在中下部，在落叶松上与落叶松八齿小蠹混合生活。 
+          防治方法：
+ （1）农业防治
+营造混交林，结合抚育采伐，增强树势；注意林区卫生，清除虫害木和风折木；在卫生条件良好的前提下，于4月中旬伐取小径木，设置饵木诱杀，然后同统一进行剥皮处理。
+ （2）保护步行虫、寄生蜂、啄木鸟等天敌。
+ （3）药剂防治。  </text></view>
+      </view>
+      
+  </view>
+  <view class="items">
+    <view class="title">红松</view>
+    <image src="/pic/hongsong.jpg" mode="withFix"></image>
+    <view class="disaster">
+      <view class="conTitle">小墨天牛</view>
+      <view class="conTxt">  <text space="nbsp">     主幼虫蛀食木质部，形成如指状粗大虫道，木材失去利用价值；成虫补充营养时啃咬树枝韧皮部，影响立木生长。 
+        防治方法
+（1）严格执行检疫，防止苗木、木材传播。
+（2）农业防治。
+营造混交林，加强抚育，增强树势；木材采伐在成虫不活动期进行，夏季采伐原木要及时运出林外；对贮木场的原木应及时剥皮，减少天牛的适生的寄主。
+（3）保护啄木鸟等天敌。
+（4）黑光灯诱杀成虫。
+（5）化学防治。  </text></view>
+    </view>
+    
+  </view>
+ 
+
+</view>
+ 
+    
+  
+  
+  
+  

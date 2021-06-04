@@ -1,0 +1,32 @@
+
+  <view class="head">
+    <image class="iconh" src="/pic/chongchong.png" mode="heightFix"></image>
+    <view class="searchArea">
+      <input class="inputContent" placeholder="请输入需要查询" />
+      <text class="btn">搜索</text>
+    </view>
+  </view>
+<view class="contents">
+  
+  <view class="items">
+    <view class="ph" >
+      <image src="{{img}}" mode="heightFix"></image>
+    </view>
+    <!-- <image src="/pic/xinjiangyang.jpg" mode="withFix"></image> -->
+    <view class="title">{{id}}</view>
+    <view class="disaster">
+      <view class="conTitle">{{name}}</view>
+      <view class="conTxt">  <text space="nbsp">    
+        {{contend}}</text></view>
+    </view>
+    
+  </view>
+ 
+
+</view>
+ 
+    
+  
+  
+  
+  
