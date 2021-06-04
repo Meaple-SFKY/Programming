@@ -1,5 +1,0 @@
-<view>
-  <button bindtap="clickon">确认</button>
-  <button bindtap="choose">上传{{temp}}</button>
-  <text>{{list[0].name}}</text>
-</view>
