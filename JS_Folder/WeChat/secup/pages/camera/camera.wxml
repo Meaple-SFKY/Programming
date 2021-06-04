@@ -7,4 +7,3 @@
   <button bindtap='record'>拍摄</button>
   <button bindtap='choose'>上传</button>
 </view>
-
