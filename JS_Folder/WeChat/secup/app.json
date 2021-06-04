@@ -27,20 +27,20 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
-      "iconPath": "pic/flex1.png",
-      "selectedIconPath": "pic/flex1.png"
+      "iconPath": "pic/liulan.png",
+      "selectedIconPath": "pic/liulan2.png"
     },
     {
       "pagePath": "pages/camera/camera",
       "text": "相机",
-      "iconPath": "pic/flex1.png",
-      "selectedIconPath": "pic/flex1.png"
+      "iconPath": "pic/xiangji.png",
+      "selectedIconPath": "pic/xiangji2.png"
     }
     ,{
       "pagePath": "pages/test/test",
       "text": "我的",
-      "iconPath": "pic/flex1.png",
-      "selectedIconPath": "pic/flex1.png"
+      "iconPath": "pic/wode.png",
+      "selectedIconPath": "pic/wode2.png"
     }]
   }
 }
