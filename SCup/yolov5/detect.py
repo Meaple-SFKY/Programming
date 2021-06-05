@@ -1,7 +1,8 @@
 import argparse
 import time
-import sys
+import base64
 import pymysql as mdb
+import django
 from pathlib import Path
 import cv2
 import torch
@@ -22,12 +23,6 @@ def getName():
     return name
 
 
-def wrResu(result):
-    fp = open("../Caches/detect_cache", "w", encoding='utf8')
-    fp.write(result)
-    fp.close()
-
-
 def getImg(imgName):
     conn = mdb.connect(host='localhost', user='SFKY', passwd='123456', db='pic')
     cursor = conn.cursor()
@@ -39,7 +34,25 @@ def getImg(imgName):
     file.close()
     cursor.close()
     conn.close()
-    # print("img get")
+
+
+def transfer(myPath):
+    fp = open(myPath, "rb")
+    data = base64.b64encode(fp.read())
+    fp.close()
+    return data
+
+
+def backMate(imgName, myPath, insectName):
+    data = transfer(myPath + imgName)
+    conn = mdb.connect(host='localhost', user='SFKY', passwd='123456', db='pic')
+    cursor = conn.cursor()
+    sql = "INSERT INTO myspider_curImg(iName, insectName, detImg) VALUES (%s, %s, %s)"
+    para = (imgName, insectName, mdb.Binary(data))
+    cursor.execute(sql, para)
+    conn.commit()
+    cursor.close()
+    conn.close()
 
 
 def detect(opt):
@@ -126,7 +139,7 @@ def detect(opt):
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
-                    insect += f" {names[int(c)]}{'s' * (n > 1)}";
+                    insect += f" {names[int(c)]}";
 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
@@ -174,14 +187,15 @@ def detect(opt):
     if save_txt or save_img:
         s = f"\n{len(list(save_dir.glob('labels/*.txt')))} labels saved to {save_dir / 'labels'}" if save_txt else ''
         print(f"Results saved to {save_dir}{s}")
+        myPath = str(f"{save_dir}{s}")
 
     print(f'Done. ({time.time() - t0:.3f}s)')
     if len(insect) == 0:
         insect = "未识别出"
-    return insect
+    return [insect, myPath]
 
 
-def detectDemo(name):
+def detectDemo():
     insect = ""
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default='yolov5_models/best.pt', help='model.pt path(s)')
@@ -213,14 +227,18 @@ def detectDemo(name):
     with torch.no_grad():
         if opt.update:  # update all models (to fix SourceChangeWarning)
             for opt.weights in ['yolov5s.pt', 'yolov5m.pt', 'yolov5l.pt', 'yolov5x.pt']:
-                insect = detect(opt=opt)
+                [insect, myPath] = detect(opt=opt)
                 strip_optimizer(opt.weights)
         else:
-            insect = detect(opt=opt)
-    return insect
+            [insect, myPath] = detect(opt=opt)
+
+    return [insect, myPath]
 
 
 if __name__ == '__main__':
     name = getName()
     getImg(name)
-    wrResu(detectDemo(name))
+    [insect, myPath] = detectDemo()
+    myPath += "/detect_"
+    insect = str(insect).replace(" ", "")
+    backMate(name, myPath, insect)

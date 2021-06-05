@@ -40,7 +40,6 @@ Page({
     
             success(res) {
               that.setData({datalist:res.data})
-              console.log(res.data)
               wx.clearStorageSync()
               app.globalData.id =  res.data.id
               app.globalData.name =  res.data.data
@@ -49,9 +48,7 @@ Page({
               wx.setStorageSync("userName", res.data.data)
               wx.setStorageSync("userContend", res.data.contend)
               wx.setStorageSync("userId", res.data.id)
-             
-              wx.setStorageSync("userImg",res.data.img)
-              
+              wx.setStorageSync("userImg", res.data.img)
               wx.navigateTo({
                 url: '/pages/test2/test2',
               })

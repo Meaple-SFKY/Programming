@@ -10,7 +10,7 @@
   
   <view class="items">
     <view class="ph" >
-      <image src="{{img}}" mode="heightFix"></image>
+      <image src="data:image/jpeg;base64,{{img}}" mode="heightFix"></image>
     </view>
     <!-- <image src="/pic/xinjiangyang.jpg" mode="withFix"></image> -->
     <view class="title">{{id}}</view>

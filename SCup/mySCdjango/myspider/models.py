@@ -29,3 +29,15 @@ class Image(models.Model):
 
     class Meta:
         pass
+
+class CurImg(models.Model):
+    iName = models.CharField(max_length=64)
+    insectName = models.CharField(max_length=10)
+    detImg = models.BinaryField()
+
+    class Meta:
+        pass
+
+class Material(models.Model):
+    insectName = models.CharField(max_length=10)
+    describe = models.TextField()
