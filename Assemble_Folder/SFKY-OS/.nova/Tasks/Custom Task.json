@@ -1,9 +1,0 @@
-{
-  "actions" : {
-    "build" : {
-      "enabled" : true,
-      "script" : "nasm boot.asm -o boot.bin\ndd conv=sync if=boot.bin of=boot.img bs=512 count=1"
-    }
-  },
-  "identifier" : "3590DD9E-5516-4EA2-B8B2-30F9E2C1FA13"
-}
