@@ -6,7 +6,7 @@
     },
     "clean" : {
       "enabled" : true,
-      "script" : "rm Caches\/*\nrm -r mySCdjango\/myspider\/migrations\/__pycache__\nrm mySCdjango\/myspider\/migrations\/*\ntouch mySCdjango\/myspider\/migrations\/__init__.py\nrm yolov5\/data\/images\/*\nrm -r yolov5\/runs\/detect\/*"
+      "script" : "rm Caches\/*\nrm -r mySCdjango\/myspider\/migrations\/__pycache__\nrm mySCdjango\/myspider\/migrations\/*\ntouch mySCdjango\/myspider\/migrations\/__init__.py\nrm yolov5\/data\/images\/*\nrm yolov5\/runs\/detect\/exp\/*"
     },
     "run" : {
       "enabled" : true,
