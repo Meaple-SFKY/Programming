@@ -47,7 +47,7 @@ module top_CPU(
     wire [1:0] PCSrc;
     wire [1:0] RegDst;
     wire [2:0] ALUOp;
-    wire [5:0] WriteReg;
+    wire [4:0] WriteReg;
     wire [31:0] WriteData;
     
     /* CPU的关键部件 */
@@ -67,11 +67,6 @@ module top_CPU(
     InstructionMemory InstructionMemory(
         .IAddr(currentIAddr),
         .IDataOut(IDataOut)
-    );
-    RegisterFile RegisterFile(
-        .clk(clk), .Reset(Reset), .WE(RegWre),
-        .ReadReg1(rs), .ReadReg2(rt), .WriteReg(WriteReg), .WriteData(WriteData),
-        .ReadData1(ReadData1), .ReadData2(ReadData2)
     );
     ALU ALU(
         .ALUOp(ALUOp), .A(ALU_inA), .B(ALU_inB),

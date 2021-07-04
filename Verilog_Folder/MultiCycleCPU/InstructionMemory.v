@@ -3,7 +3,7 @@
 module InstructionMemory(
     input [31:0] IAddr,
     //input [31:0] IDataIn,
-    //input RW,    // Ö¸Áî´æ´¢Æ÷¶ÁĞ´¿ØÖÆĞÅºÅ£¬Îª0Ğ´£¬Îª1¶Á
+    //input RW,    // æŒ‡ä»¤å­˜å‚¨å™¨è¯»å†™æ§åˆ¶ä¿¡å·ï¼Œä¸º0å†™ï¼Œä¸º1è¯»
     output [31:0] IDataOut
     );
     
