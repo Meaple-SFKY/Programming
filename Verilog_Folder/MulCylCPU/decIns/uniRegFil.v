@@ -7,24 +7,22 @@ module uniRegFilMod (
 	
 	reg [31:0] uniRegFile [0:31];
 	integer cou;
-
-	always @(negedge clk) begin
+	
+	always @(posedge clk or posedge rst) begin
 		if (rst == 1) begin
-			for (cou = 0; cou < 32; cou = cou + 1) begin
+			for (cou = 1; cou < 31; cou = cou + 1) begin
 				uniRegFile[cou] = 0;
 			end
-		end
-	end
-	
-	always @(posedge clk) begin
-		if (ifWR == 0) begin
-			regFilOutA = uniRegFile[irOutRs];
-			regFilOutB = uniRegFile[irOutRt];
 		end else begin
-			if (wriReg == 0) begin
-				uniRegFile[irOutRd] = muxForOut;
+			if (ifWR == 0) begin
+				regFilOutA = uniRegFile[irOutRs];
+				regFilOutB = uniRegFile[irOutRt];
 			end else begin
-				uniRegFile[irOutRt] = muxForOut;
+				if (wriReg == 0) begin
+					uniRegFile[irOutRd] = muxForOut;
+				end else begin
+					uniRegFile[irOutRt] = muxForOut;
+				end
 			end
 		end
 	end

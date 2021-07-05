@@ -10,7 +10,7 @@ module expBitMod (
 		assign sig = irOutImm[15];
 	end
 
-	always @* begin
+	always @(posedge clk) begin
 		if (sig == 0) begin
 			expBitOut[31:16] = 0;
 		end else begin

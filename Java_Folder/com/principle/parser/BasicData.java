@@ -69,7 +69,6 @@ public class BasicData {
         return ANALYSISTABLE;
     }
 
-    // 构造函数
     public BasicData() {
         initFirst();
         initFollow();
@@ -393,6 +392,7 @@ public class BasicData {
         strTemp = deleteEmpty(string);
         return strTemp;
     }
+    
     // 把FIRST集合加到FOLLOW
     private void addFirstToFollow() {
         for (int i = 0; i < VN.length; i++) {

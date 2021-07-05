@@ -5,7 +5,7 @@ module regAMod (
 );
 	
 	always @(negedge clk) begin
-		regAOut = regFilOutA;
+		assign regAOut = regFilOutA;
 	end
 
 endmodule

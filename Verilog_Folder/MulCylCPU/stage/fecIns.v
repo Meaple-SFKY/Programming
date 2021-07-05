@@ -5,7 +5,7 @@
 `include "../fecIns/npc.v"
 
 module fecIns (
-	input wire clk, rst,
+	input wire clk, rst, fecAbl,
 	input wire [31:0] muxFirOut,
 	output wire [5:0] irOutOpe,
 	output wire [25:0] irOutOth,
@@ -16,7 +16,7 @@ module fecIns (
 	wire [31:0] insMemOut;
 
 	pcMod pc(
-		.clk(clk), .rst(rst),
+		.clk(clk), .rst(rst), .fecAbl(fecAbl),
 		.pcInp(muxFirOut),
 		.pcOut(pcOut)
 	);

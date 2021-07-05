@@ -1,10 +1,10 @@
 module muxForMod (
-	input wire wbSig,
+	input wire clk, wbSig,
 	input wire [31:0] lmdOut, aluOOut,
 	output reg [31:0] muxForOut
 );
 	
-	always @* begin
+	always @(negedge clk) begin
 		if (wbSig == 0) begin
 			assign muxForOut = aluOOut;
 		end else begin

@@ -1,46 +1,60 @@
 package com.principle.lrparser;
 
 public class FirstSet {
-    /* private char[] VN = {'S', 'C'};
-    private char[] VT = {'c', 'd', '#'};
-    public char[] charactor = {'S', 'C', 'c', 'd'};
-    public String[] title = {"Status", "c", "d", "#", "S", "C"};
+    // private char[] VN = {'S', 'C'};
+    // private char[] VT = {'c', 'd', '#'};
+    // public char[] charactor = {'S', 'C', 'c', 'd'};
+    // public String[] title = {"Status", "c", "d", "#", "S", "C"};
 
-    public String[] grammar = {
-        "S->CC",
-        "C->cC",
-        "C->d"
-    };
+    // public String[] grammar = {
+    //     "S->CC",
+    //     "C->cC",
+    //     "C->d"
+    // };
+
+    // public String[] extendGrammar = {
+    //     "E->S",
+    //     "S->CC",
+    //     "C->cC",
+    //     "C->d"
+    // };
+
+    // private char[] VN = {'E', 'T', 'F'};
+    // private char[] VT = {'i', '+', '*', '(', ')', '#'};
+    // public char[] charactor = {'E', 'T', 'F', '+', '*', '(', ')', 'i'};
+    // public String[] title = {"Status", "i", "+", "*", "(", ")", "#", "E", "T", "F"};
+    
+    // public String[] grammar = {
+    //     "E->E+T",
+    //     "E->T",
+    //     "T->T*F",
+    //     "T->F",
+    //     "F->(E)",
+    //     "F->i"
+    // }; 
+    
+    // public String[] extendGrammar = {
+    //     "S->E",
+    //     "E->E+T",
+    //     "E->T",
+    //     "T->T*F",
+    //     "T->F",
+    //     "F->(E)",
+    //     "F->i"
+    // };
+
+    private char[] VN = { 'S', 'B' };
+    private char[] VT = { 'a', 'b', '#' };
+    public char[] charactor = { 'S', 'B', 'a', 'b' };
+    public String[] title = { "Status", "a", "b", "#", "S", "B" };
+
+    public String[] grammar = { "S->BB", "B->aB", "B->b" };
 
     public String[] extendGrammar = {
-        "E->S",
-        "S->CC",
-        "C->cC",
-        "C->d"
-    }; */
-
-    private char[] VN = {'E', 'T', 'F'};
-    private char[] VT = {'i', '+', '*', '(', ')', '#'};
-    public char[] charactor = {'E', 'T', 'F', '+', '*', '(', ')', 'i'};
-    public String[] title = {"Status", "i", "+", "*", "(", ")", "#", "E", "T", "F"};
-    
-    public String[] grammar = {
-        "E->E+T",
-        "E->T",
-        "T->T*F",
-        "T->F",
-        "F->(E)",
-        "F->i"
-    }; 
-    
-    public String[] extendGrammar = {
-        "S->E",
-        "E->E+T",
-        "E->T",
-        "T->T*F",
-        "T->F",
-        "F->(E)",
-        "F->i"
+        "T->S",
+        "B->aB",
+        "S->BB",
+        "B->b"
     };
 
     private String[] FIRST = new String[VN.length];
