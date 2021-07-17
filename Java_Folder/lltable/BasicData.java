@@ -410,7 +410,6 @@ public class BasicData {
 							if (temp < GRAMMAR[j].length()) {
 								if (GRAMMAR[j].charAt(temp) != '|') {
 									if (ifIsAVt(GRAMMAR[j].charAt(temp)) == true) {
-										;
 										FOLLOW[i] += GRAMMAR[j].charAt(temp);
 									} else if (ifIsAVn(GRAMMAR[j].charAt(temp)) == true) {
 										String tempString = "";

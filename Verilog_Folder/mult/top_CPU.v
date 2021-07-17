@@ -1,3 +1,16 @@
+`include "ControlUnit.v"
+`include "PC.v"
+`include "InstructionMemory.v"
+`include "RegisterFile.v"
+`include "ALU.v"
+`include "DataMemory.v"
+`include "ImmediateExtend.v"
+`include "IR.v"
+`include "DFF_32bits.v"
+`include "Mux4_32bits.v"
+`include "Mux4_5bits.v"
+`include "Mux2_32bits.v"
+
 `timescale 1ns / 1ps
 
 module top_CPU(
@@ -34,7 +47,7 @@ module top_CPU(
     wire [1:0] PCSrc;
     wire [1:0] RegDst;
     wire [2:0] ALUOp;
-    wire [5:0] WriteReg;
+    wire [4:0] WriteReg;
     wire [31:0] WriteData;
     
     /* CPU的关键部件 */

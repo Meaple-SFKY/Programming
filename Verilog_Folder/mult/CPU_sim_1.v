@@ -1,3 +1,5 @@
+`include "top_CPU.v"
+
 `timescale 1ns / 1ps
 
 module CPU_sim_1;
@@ -19,6 +21,8 @@ module CPU_sim_1;
     always #50 clk = ~clk;//仿真时钟周期为100ns
     
     initial begin
+        $dumpfile("test.vcd");
+        $dumpvars(0, CPU_sim_1);
         clk = 1;
         Reset = 0;
         #25;
