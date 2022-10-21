@@ -65,7 +65,6 @@ public class SetTable {
                     if (family.firstSet.indexOfVt(tempItem.item.charAt(tempItem.indexPoint)) != -1) {
                         int indexFamily = familyItem.getIndexInFamily(family.goTo(familyItem.itemSets.get(i), tempItem.item.charAt(tempItem.indexPoint)));
                         if (indexFamily != -1) {
-                            /* System.out.println("--------" + tempItem.item); */
                             if ((analysisTable[i][family.firstSet.indexOfVt(tempItem.item.charAt(tempItem.indexPoint))].length() == 0) ||
                                 analysisTable[i][family.firstSet.indexOfVt(tempItem.item.charAt(tempItem.indexPoint))].equals("s" + indexFamily)) {
                                 analysisTable[i][family.firstSet.indexOfVt(tempItem.item.charAt(tempItem.indexPoint))] = "s" + indexFamily;

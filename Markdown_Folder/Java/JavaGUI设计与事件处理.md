@@ -407,7 +407,6 @@ public class ActionEventTest {
     - public void fillRect(int x, int y, int width, int height)
 
 ![graphics](Pictures/graphics.png)
-
 ### <3>使用图像
 
 - 获得图像：使用 Toolkit 的 getImage 方法
